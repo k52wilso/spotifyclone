@@ -1,0 +1,30 @@
+
+// Popular Albums Carousel
+div[class$="-carousel"] {
+    padding: 1rem;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .title {
+            color: #fff;
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .chevrons {
+            i {
+                color: rgba(179, 176, 176, 0.295);
+                font-size: 2rem;
+                margin: 0 1rem;
+            }
+        }
+    }
+
+    .section {
+        display: flex;
+        justify-content: space-between;
+    }
+}
