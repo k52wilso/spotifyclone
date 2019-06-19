@@ -1,0 +1,21 @@
+{
+    "albums": [{
+        "id": 1,
+        "title": "American Beauty/American Psycho",
+        "artist_id": 1,
+        "year": "2015",
+        "length": "39:01",
+        "imageURL": "./images/American_Beauty_American_Psycho_cover.png",
+        "popularity": 8,
+        "type": "album"
+    },{
+        "id": 2,
+        "title": "24K Magic",
+        "artist_id": 3,
+        "year": "2016",
+        "length": "39:01",
+        "imageURL": "./images/Bruno_Mars_-_24K_Magic_(Official_Album_Cover).png",
+        "popularity": 8,
+        "type": "album"
+    }]
+}

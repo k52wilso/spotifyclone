@@ -1,0 +1,54 @@
+
+// Carousel CSS
+div[class$="-carousel"] {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .title {
+            color: #fff;
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .chevrons {
+            i {
+                color: rgba(179, 176, 176, 0.5);
+                font-size: 1rem;
+                margin: 0 1rem;
+            }
+        }
+    }
+
+    .section {
+        display: flex;
+    }
+}
+
+// Popular Artist CSS overwrites default carousel item CSS
+div[class*="popular-artists-"] {
+    // Carousel item for Popular Artist
+    .carousel-item {
+        text-align: center;
+        display: inline-block;
+        width: 6.5rem;
+        height: 6.5rem;
+        img {
+            border-radius: 50%;
+            box-shadow: 2px 2px 2px rgb(63, 63, 63);
+            width: 100%;
+            height: 6.5rem;
+            margin-bottom: .8rem;
+            
+        }
+
+        h4 {
+            color: #fff;
+            font-size: 1rem;
+        }
+
+    }
+}

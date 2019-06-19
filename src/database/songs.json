@@ -1,0 +1,45 @@
+{
+    "songs": [{
+        "id": 1,
+        "title": "Irresistble",
+        "album_id": 1,
+        "length": "3:26",
+        "src": "./music/Fall-Out-Boy-Irresistible.mp3"
+    },{
+        "id": 2,
+        "title": 	"Centuries",
+        "album_id": 1,
+        "length": "3:51",
+        "src": "./music/fall_out_boy-centuries.mp3"
+    },{
+        "id": 3,
+        "title": 	"The Kids Aren't Alright",
+        "album_id": 1,
+        "length": "4:20",
+        "src": "./music/Fall_Out_Boy_-_The_Kids_Aren't_Alright.mp3"
+    },{
+        "id": 4,
+        "title": 	"Uma Thurman",
+        "album_id": 1,
+        "length": "3:31",
+        "src": "./music/Fall-Out-Boy-Uma-Thurman.mp3"
+    },{
+        "id": 5,
+        "title": 	"Jet Pack Blues",
+        "album_id": 1,
+        "length": "2:59",
+        "src": "./music/Fall-Out-Boy-Jet-Pack-Blues.mp3"
+    },{
+        "id": 6,
+        "title": 	"24K Magic",
+        "album_id": 2,
+        "length": "3:46",
+        "src": "./music/Bruno-Mars-24K-Magic.mp3"
+    },{
+        "id": 7,
+        "title": 	"Finesse (Remix) ft. Cardi B",
+        "album_id": 2,
+        "length": "3:37",
+        "src": "./music/finesse.mp3"
+    }]
+}

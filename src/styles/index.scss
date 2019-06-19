@@ -1,0 +1,17 @@
+@import '../../node_modules/carbon-components/scss/components/overflow-menu/overflow-menu.scss';
+@import 'reset';
+@import 'variables';
+
+// Components
+@import 'components/carouselitem.scss';
+@import 'components/carousel.scss';
+@import 'components/overflow-menu.scss'; // overrides carbon component
+@import 'components/slider.scss';
+
+// Containers
+@import 'containers/appcontainer.scss';
+@import 'containers/navigationcontainer.scss';
+@import 'containers/maincontainer.scss';
+@import 'containers./musiccontainer.scss';
+@import 'containers/sidecontainer.scss';
+@import 'containers/albumcontainer.scss';

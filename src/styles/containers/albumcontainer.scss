@@ -1,0 +1,81 @@
+.album-container {
+    padding: 2rem;
+    .album-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .info {
+            color: #fff;
+            h1 {
+                font-size: 2.4rem;
+                font-weight: bold;
+                margin: 0 0 1rem 0;
+            }
+
+            h2 {
+                font-size: 2rem;
+                margin: 0 0 1rem 0;
+            }
+
+            p {
+                font-size: 1.6rem;
+                margin: 0 0 1rem 0;
+            }
+
+            i {
+                margin-right: .5rem;
+            }
+        }
+
+        img {
+            width: 15rem;
+            height: 15rem;
+            box-shadow: .2rem .2rem 2rem rgb(63, 63, 63);
+        }
+    }
+
+    .songs {
+        background-color: rgba(9, 19, 35, 0.396);
+        margin: 1.5rem 0;
+        color: #fff;
+        .song {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            padding: 1rem 2rem;
+            transition: .3s;
+            cursor: pointer;
+            &:hover {
+                background: #18325c;
+                .bx--overflow-menu {
+                    opacity: 1;
+                    svg {
+                        circle {
+                            fill: #7e7d7d;
+                        }
+                    }
+                }
+            }
+
+            .info {
+                display: flex;
+                align-items: center;
+                h4 {
+                    font-size: 1rem;
+                    margin-right: .5rem;
+                }
+    
+                .title {
+                    font-size: 1.4rem;
+                }
+    
+                .bx--overflow-menu {
+                    position: relative;
+                    margin: 0 1.5rem;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
