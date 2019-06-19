@@ -1,0 +1,24 @@
+{
+    "artists":[{
+        "id": 1,
+        "name": "Fall Out Boy",
+        "bio": "Fall Out Boy is an American rock band formed in Wilmette, Illinois, a suburb of Chicago, in 2001. The band consists of lead vocalist and rhythm guitarist Patrick Stump, bassist Pete Wentz, lead guitarist Joe Trohman, and drummer Andy Hurley.",
+        "imageURL": "./images/fob.jpg",
+        "popularity": 8,
+        "type": "artist"
+    },{
+        "id": 2,
+        "name": "One Republic",
+        "bio": "OneRepublic is an American pop rock band formed in Colorado Springs, Colorado, in 2002. It consists of lead vocalist Ryan Tedder, guitarist Zach Filkins, guitarist Drew Brown, bassist and cellist Brent Kutzle, drummer Eddie Fisher and keyboardist Brian Willett.",
+        "imageURL": "./images/onerepublic.jpg",
+        "popularity": 8,
+        "type": "artist"
+    },{
+        "id": 3,
+        "name": "Bruno Mars",
+        "bio": "Peter Gene Hernandez, known professionally as Bruno Mars, is an American singer, songwriter, multi-instrumentalist, record producer, and dancer. He is known for his stage performances, retro showmanship and for performing in a wide range of musical styles, including R&B, funk, pop, soul, reggae, hip hop, and rock.",
+        "imageURL": "",
+        "popularity": 10,
+        "type": "artist"
+    }]
+}

@@ -1,0 +1,27 @@
+
+.bx--overflow-menu {
+    position: absolute;
+    right: 1rem;
+    outline: none;
+    border-bottom: none !important;
+    &:hover {
+        background: none;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+
+.menu-item {
+    background: #162f58;
+    color: white !important;
+    padding: 1rem;
+    border: none;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        background:#255096;
+    }
+}

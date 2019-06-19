@@ -1,18 +1,29 @@
 import React, {Component} from "react";
-import { CarouselItem } from "./carouselitem"
+import { CarouselItem } from "./carouselitem";
+import PropTypes from "prop-types";
 
 export class Carousel extends Component {
+
     constructor() {
         super();
-        this.state = {
-            title: "Popular Albums",
-            items: [1,2,3,4,5,6]
-        };
+
+        this._changeView = this._changeView.bind(this);
     }
+
+    _changeView(item) {
+        const { callback } = this.props;
+        if (callback) {
+            callback(item.type, item.id);
+        } else {
+            console.log("click failed");
+        }
+    }
+
     render() {
-        const {items, title} = this.state;
+        const { title, carouselName, items} = this.props;
+        const carouselClass = carouselName ? `${carouselName}-carousel` : "carousel";
         return(
-           <div className="popular-album-carousel">
+           <div className={carouselClass}>
                 <div className="header">
                     <h1 className="title">{title}</h1>
                     <div className="chevrons">
@@ -21,9 +32,13 @@ export class Carousel extends Component {
                     </div>
                 </div>
                 <div className="section">
-                    {items.map(item => <CarouselItem />)}
+                    {items.map((item) => <CarouselItem key={`${carouselName}-${item.id}`} item={item} callback={this._changeView.bind(this,item)}/>)}
                 </div>
            </div>
         )
     }
+}
+
+Carousel.propTypes = {
+    items: PropTypes.array.isRequired
 }

@@ -3,10 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "jest": {
+    "collectCoverageFrom": [
+      "src/{actions,components,containers,reducers,services,utils}/*.{js,jsx,ts,tsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ]
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --coverage",
     "start": "webpack-dev-server --config ./webpack.config.js --mode=development",
-    "build": "webpack --config webpack.config.js --mode=production"
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -20,22 +27,37 @@
   "homepage": "https://github.com/k52wilso/spotifyclone#readme",
   "devDependencies": {
     "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
     "css-loader": "^2.1.0",
     "file-loader": "^3.0.1",
     "react-hot-loader": "^4.11.0",
+    "redux-mock-store": "^1.5.3",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-    "webpack": "^4.34.0"
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4",
+    "webpack-merge": "^4.2.1"
   },
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
     "carbon-components": "^10.3.1",
     "carbon-components-react": "^7.3.1",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "expect": "^24.5.0",
     "carbon-icons": "^7.0.7",
+    "lodash": "^4.17.11",
     "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "redux": "^4.0.1",
+    "react-redux": "^6.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "react-dom": "^16.8.6",
+    "superagent": "^5.0.8"
   }
 }
